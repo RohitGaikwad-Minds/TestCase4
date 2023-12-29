@@ -1,0 +1,23 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LogoutTest {
+    public static void main(String[] args) {
+        // Set the path to your ChromeDriver executable
+        System.setProperty("webdriver.chrome.driver", "path_to_chromedriver.exe");
+
+        // Instantiate ChromeDriver
+        WebDriver driver = new ChromeDriver();
+
+        // Navigate to the logout page or trigger the logout action
+        // Replace "logout_url" with the actual URL or action to log out the user
+        driver.get("logout_url");
+
+        // Optionally, add assertions or check for elements on the page to verify that the logout was successful
+
+        // Close the browser
+        driver.quit();
+    }
+}
